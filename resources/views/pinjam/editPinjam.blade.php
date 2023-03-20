@@ -24,45 +24,45 @@
                   <label for="">Kelas</label>
                   <select name="kelas" id="kelas" class="form-control" value="{{ old('kelas', $edit_pinjam->kelas)}}">
                     <option value="" selected hidden>Isi Kelas</option>
-                    <option value="X AK 1">X AK 1</option>
-                    <option value="X AK 2">X AK 2</option>
-                      <option value="X AK 3">X AK 3</option>
-                      <option value="X AK 4">X AK 4</option>
-                      <option value="X AK 5">X AK 5</option>
-                      <option value="X AK 6">X AK 6</option>
-                      <option value="X TKJ 1">X TKJ 1</option>
-                      <option value="X TKJ 2">X TKJ 2</option>
-                      <option value="X TKJ 3">X TKJ 3</option>
-                      <option value="X RPL 1">X RPL 1</option>
-                      <option value="X RPL 2">X RPL 2</option>
-                      <option value="XI AK 1">XI AK 1</option>
-                      <option value="XI AK 2">XI AK 2</option>
-                      <option value="XI AK 3">XI AK 3</option>
-                      <option value="XI AK 4">XI AK 4</option>
-                      <option value="XI AK 5">XI AK 5</option>
-                      <option value="XI AK 6">XI AK 6</option>
-                      <option value="XI TKJ 1">XI TKJ 1</option>
-                      <option value="XI TKJ 2">XI TKJ 2</option>
-                      <option value="XI TKJ 3">XI TKJ 3</option>
-                      <option value="XI RPL 1">XI RPL 1</option>
-                      <option value="XI RPL 2">XI RPL 2</option>
-                      <option value="XII AK 1">XII AK 1</option>
-                      <option value="XII AK 2">XII AK 2</option>
-                      <option value="XII AK 3">XII AK 3</option>
-                      <option value="XII AK 4">XII AK 4</option>
-                      <option value="XII AK 5">XII AK 5</option>
-                      <option value="XII AK 6">XII AK 6</option>
-                      <option value="XII TKJ 1">XII TKJ 1</option>
-                      <option value="XII TKJ 2">XII TKJ 2</option>
-                      <option value="XII TKJ 3">XII TKJ 3</option>
-                      <option value="XII RPL 1">XII RPL 1</option>
-                      <option value="XII RPL 2">XII RPL 2</option>
-                      <option value="XIII AK 1">XIII AK 1</option>
-                      <option value="XIII AK 2">XIII AK 2</option>
-                      <option value="XIII AK 3">XIII AK 3</option>
-                      <option value="XIII AK 4">XIII AK 4</option>
-                      <option value="XIII AK 5">XIII AK 5</option>
-                      <option value="XIII AK 6">XIII AK 6</option>
+                    <option value="X AK 1"{{ $edit_pinjam->kelas === 'X AK 1' ? 'selected' : '' }}>X AK 1</option>
+                    <option value="X AK 2"{{ $edit_pinjam->kelas === 'X AK 2' ? 'selected' : '' }}>X AK 2</option>
+                      <option value="X AK 3"{{ $edit_pinjam->kelas === 'X AK 3' ? 'selected' : '' }}>X AK 3</option>
+                      <option value="X AK 4"{{ $edit_pinjam->kelas === 'X AK 4' ? 'selected' : '' }}>X AK 4</option>
+                      <option value="X AK 5"{{ $edit_pinjam->kelas === 'X AK 5' ? 'selected' : '' }}>X AK 5</option>
+                      <option value="X AK 6"{{ $edit_pinjam->kelas === 'X AK 6' ? 'selected' : '' }}>X AK 6</option>
+                      <option value="X TKJ 1"{{ $edit_pinjam->kelas === 'X TKJ 1' ? 'selected' : '' }}>X TKJ 1</option>
+                      <option value="X TKJ 2"{{ $edit_pinjam->kelas === 'X TKJ 2' ? 'selected' : '' }}>X TKJ 2</option>
+                      <option value="X TKJ 3"{{ $edit_pinjam->kelas === 'X TKJ 3' ? 'selected' : '' }}>X TKJ 3</option>
+                      <option value="X RPL 1"{{ $edit_pinjam->kelas === 'X RPL 1' ? 'selected' : '' }}>X RPL 1</option>
+                      <option value="X RPL 2"{{ $edit_pinjam->kelas === 'X RPL 2' ? 'selected' : '' }}>X RPL 2</option>
+                      <option value="XI AK 1"{{ $edit_pinjam->kelas === 'XI AK 1' ? 'selected' : '' }}>XI AK 1</option>
+                      <option value="XI AK 2"{{ $edit_pinjam->kelas === 'XI AK 2' ? 'selected' : '' }}>XI AK 2</option>
+                      <option value="XI AK 3"{{ $edit_pinjam->kelas === 'XI AK 3' ? 'selected' : '' }}>XI AK 3</option>
+                      <option value="XI AK 4"{{ $edit_pinjam->kelas === 'XI AK 4' ? 'selected' : '' }}>XI AK 4</option>
+                      <option value="XI AK 5"{{ $edit_pinjam->kelas === 'XI AK 5' ? 'selected' : '' }}>XI AK 5</option>
+                      <option value="XI AK 6"{{ $edit_pinjam->kelas === 'XI AK 6' ? 'selected' : '' }}>XI AK 6</option>
+                      <option value="XI TKJ 1"{{ $edit_pinjam->kelas === 'XI TKJ 1' ? 'selected' : '' }}>XI TKJ 1</option>
+                      <option value="XI TKJ 2"{{ $edit_pinjam->kelas === 'XI TKJ 2' ? 'selected' : '' }}>XI TKJ 2</option>
+                      <option value="XI TKJ 3"{{ $edit_pinjam->kelas === 'XI TKJ 3' ? 'selected' : '' }}>XI TKJ 3</option>
+                      <option value="XI RPL 1"{{ $edit_pinjam->kelas === 'XI RPL 1' ? 'selected' : '' }}>XI RPL 1</option>
+                      <option value="XI RPL 2"{{ $edit_pinjam->kelas === 'XI RPL 2' ? 'selected' : '' }}>XI RPL 2</option>
+                      <option value="XII AK 1"{{ $edit_pinjam->kelas === 'XII AK 1' ? 'selected' : '' }}>XII AK 1</option>
+                      <option value="XII AK 2"{{ $edit_pinjam->kelas === 'XII AK 2' ? 'selected' : '' }}>XII AK 2</option>
+                      <option value="XII AK 3"{{ $edit_pinjam->kelas === 'XII AK 3' ? 'selected' : '' }}>XII AK 3</option>
+                      <option value="XII AK 4"{{ $edit_pinjam->kelas === 'XII AK 4' ? 'selected' : '' }}>XII AK 4</option>
+                      <option value="XII AK 5"{{ $edit_pinjam->kelas === 'XII AK 5' ? 'selected' : '' }}>XII AK 5</option>
+                      <option value="XII AK 6"{{ $edit_pinjam->kelas === 'XII AK 6' ? 'selected' : '' }}>XII AK 6</option>
+                      <option value="XII TKJ 1"{{ $edit_pinjam->kelas === 'XII TKJ 1' ? 'selected' : '' }}>XII TKJ 1</option>
+                      <option value="XII TKJ 2"{{ $edit_pinjam->kelas === 'XII TKJ 2' ? 'selected' : '' }}>XII TKJ 2</option>
+                      <option value="XII TKJ 3"{{ $edit_pinjam->kelas === 'XII TKJ 3' ? 'selected' : '' }}>XII TKJ 3</option>
+                      <option value="XII RPL 1"{{ $edit_pinjam->kelas === 'XII RPL 1' ? 'selected' : '' }}>XII RPL 1</option>
+                      <option value="XII RPL 2"{{ $edit_pinjam->kelas === 'XII RPL 2' ? 'selected' : '' }}>XII RPL 2</option>
+                      <option value="XIII AK 1"{{ $edit_pinjam->kelas === 'XIII AK 1' ? 'selected' : '' }}>XIII AK 1</option>
+                      <option value="XIII AK 2"{{ $edit_pinjam->kelas === 'XIII AK 2' ? 'selected' : '' }}>XIII AK 2</option>
+                      <option value="XIII AK 3"{{ $edit_pinjam->kelas === 'XIII AK 3' ? 'selected' : '' }}>XIII AK 3</option>
+                      <option value="XIII AK 4" {{ $edit_pinjam->kelas === 'XIII AK 4' ? 'selected' : '' }}>XIII AK 4</option>
+                      <option value="XIII AK 5"{{ $edit_pinjam->kelas === 'XIII AK 5' ? 'selected' : '' }}>XIII AK 5</option>
+                      <option value="XIII AK 6"{{ $edit_pinjam->kelas === 'XIII AK 6' ? 'selected' : '' }}>XIII AK 6</option>
                   </select>
                 </div>
                 <div class="form-group">
