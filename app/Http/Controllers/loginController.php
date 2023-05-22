@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class loginController extends Controller
 {
@@ -16,14 +18,16 @@ class loginController extends Controller
             'username'=> 'required',
             'password'=> 'required'
         ]);
-
         if(Auth::attempt($login)){
-            $user = User::where('username', $request['username'])->first();
             $request->session()->regenerate();
-            return redirect()->intended('/')->with('success', 'sukses login');
-            // return dd(auth()->user()->username);
+            return redirect('/');
         }
-        // return dd($request->password);
-        return back()->with('error', 'Login gagal gais');
+        return back()->with('loginError', 'login failed');
+        // $user = User::where('username', $login['username'])->first();
+        //     if(Hash::check($login['password'], $user->password)){
+        //         Auth::login($user);
+        //         return redirect('/')->with('success', 'login sukses');
+        //     }
+        //     return dd('gagal');
     }
 }

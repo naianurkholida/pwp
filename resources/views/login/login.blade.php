@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Argon Dashboard 2 by Creative Tim
+    Login
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -39,9 +39,7 @@
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <!-- Navbar -->
-    
-        <!-- End Navbar -->
+
       </div>
     </div>
   </div>
@@ -60,10 +58,17 @@
                   <form role="form" method="post" action="/login">
                     @csrf
                     <div class="mb-3">
-                      <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" name="username" autofocus>
+                      <input type="text" class="form-control form-control-lg @error('username') is-invalid @enderror"  placeholder="Username" aria-label="Username" name="username" autofocus  value="{{ old('username')}}">
+                    @error('username')
+                    <div class="invalid-feedback">
+                      {{ $message }}
                     </div>
+                    @enderror
+                    </div>
+
+
                     <div class="mb-3">
-                      <input type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" name="password">
+                      <input type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" name="password" >
                     </div>
                     
                     <div class="text-center">

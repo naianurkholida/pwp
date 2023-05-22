@@ -6,15 +6,15 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h6>Pinjam alat</h6>
+              <h6>Distribusi Alat Sekolah</h6>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
-              <form class="m-4" action="/pinjam" method="post">
+              <form class="m-4" action="/distribusi" method="post">
                 @csrf
 
                 <div class="form-group">
-                  <label for="nama">Nama Peminjam</label>
-                  <input type="text" class="form-control" name="nama_peminjam" id="nama_peminjam" placeholder="Masukkan Nama Peminjam" required>
+                  <label for="nama">Nama Pemohon</label>
+                  <input type="text" class="form-control" name="nama_pemohon" id="nama_pemohon" placeholder="Masukkan Nama Peminjam" required>
                 </div>
                 <div class="form-group">
                   <label for="">Kelas</label>
@@ -62,32 +62,12 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="">Tanggal Pinjam</label>
-                  <input type="date" name="tanggal_pinjam" id="tgl_pinjam"class="form-control" required>
+                  <label for="">Tanggal Distribusi</label>
+                  <input type="date" name="tgl_distribusi" id="tgl_distribusi"class="form-control" required >
                 </div>
                 <div class="form-group">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="">Jam Pinjam</label>
-                      <input type="time" name="jam_pinjam" id="jam_pinjam" class="form-control" required>
-                    </div>
-                    <div class="col-lg-6">
-                      <label for="">Maks pinjam</label>
-                      <input type="time" name="jam_max_pinjam" id="max_pinjam" class="form-control"required>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="">Phone Number</label>
-                  <input type="text " name="nomor_tlp" id="" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="">Guru Mata Pelajaran</label>
-                  <input type="text" name="guru_mapel" class="form-control"required>
-                </div>
-                <div class="form-group">
-                  <label for="">Keterangan Pinjam</label>
-                  <input type="text" name="ket_pinjam" id="" class="form-control"required>
+                  <label for="">Keterangan Kebutuhan</label>
+                  <input type="text" name="ket_kebutuhan" id="" class="form-control" placeholder="Masukkan kebutuhan" required>
                 </div>
                 <div class="form-group">
                   <label for="">Petugas</label>
@@ -108,8 +88,8 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="">Jumlah Pinjam</label>
-                  <input type="number" name="jumlah_pinjam" id="" class="form-control" required>
+                  <label for="">Jumlah Barang</label>
+                  <input type="number" name="jumlah_distribusi" id="" class="form-control" placeholder="Jumlah barang yang di distribusi" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button type="reset" class="btn btn-primary">Reset</button>

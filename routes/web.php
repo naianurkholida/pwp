@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\barangController;
 use App\Http\Controllers\pinjamController;
+use App\Http\Controllers\distribusiController;
 
 
 
@@ -28,5 +30,10 @@ Route::get('/dataPinjam', [pinjamController::class, 'index']);
 Route::get('/kembali/{kode_pinjam}', [pinjamController::class, 'kembali']);
 Route::patch('update/{edit_pinjam}', [pinjamController::class, 'update']);
 Route::resource('edit_pinjam', '\App\Http\Controllers\pinjamController')->except('update');
-
-// Route::get('/dataPinjam')
+Route::get('/distribusi', [distribusiController::class, 'create']);
+Route::post('/distribusi', [distribusiController::class, 'store']);
+Route::get('/dataDistribusi', [distribusiController::class, 'index']);
+Route::get('/barang', [barangController::class, 'index']);
+Route::post('/barang', [barangController::class, 'store']);
+Route::get('/dataBarang', [barangController::class, 'show']);
+// Route::get('/image/{kode_barang}', [barangController::class, 'show'])->name('image.show');

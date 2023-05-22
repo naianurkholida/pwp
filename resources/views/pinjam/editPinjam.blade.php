@@ -95,7 +95,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">Petugas</label>
-                  <select name="userid" id="userid" class="form-control" value="{{ old('userid', $edit_pinjam->userid)}}">
+                  <select name="userid" id="userid" class="form-control">
                     <option value="" selected hidden>Masukkan Petugas</option>
                     @foreach($petugas as $item)
                     <option value="{{ $item->userid }}">{{ $item->username }}</option>
@@ -107,7 +107,7 @@
                   <select name="kode_barang" id="" class="form-control" value="{{ old('kode_barang', $edit_pinjam->kode_barang)}}">
                       <option value="" selected hidden>Masukkan Barang</option>
                       @foreach($barang as $item)
-                      <option value="{{$item->kode_barang}}">{{$item->nama_barang}}</option>
+                      <option value="{{$item->kode_barang}}" {{$edit_pinjam->kode_barang === '($item->kode_barang)' ? 'selected' : ''}}>{{$item->nama_barang}}</option>
                       @endforeach
                   </select>
                 </div>
